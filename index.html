@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clurious - Your Personal AI Coach</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">Clurious<span>.</span></div>
+            <nav class="main-nav">
+                <a href="#">Home</a>
+                <a href="#">Tests</a>
+                <a href="#">Contact Us</a>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle-btn">
+                <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg id="moon-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section class="hero-section">
+            <h1 class="clurious-title">Clurious<span style="color: blue;">.</span></h1>
+            <div class="user-welcome">
+                <h2>Welcome back, Dipanshu!</h2>
+                <button class="report-btn">View Your Performance Report</button>
+            </div>
+        </section>
+
+        <section class="tabs-section">
+            <div class="tab-nav">
+                <button class="tab-btn active" data-tab="tests">📚 Test Library</button>
+                <button class="tab-btn" data-tab="given-tests">✅ Given Tests</button>
+                <button class="tab-btn" data-tab="personalized-tests">🧠 Personal Gym</button>
+                <button class="tab-btn" data-tab="build-foundation">🌱 Build Foundation</button>
+            </div>
+
+            <div id="tests" class="tab-content active">
+                <div class="filter-bar">
+                    <select id="tests-filter-2">
+                        <option value="all">All Difficulties</option>
+                        <option value="Hard">Hard</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Easy">Easy</option>
+                    </select>
+                    <select id="tests-filter">
+                        <option value="all">All Difficulties</option>
+                        <option value="Hard">Hard</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Easy">Easy</option>
+                    </select>
+                </div>
+                <div class="card-container" id="tests-card-container">
+                    <!-- Test cards will be dynamically inserted here by JS -->
+                </div>
+            </div>
+
+            <div id="given-tests" class="tab-content">
+                <div class="filter-bar">
+                    <select>
+                        <option value="all">All Subjects</option>
+                        <option value="Data Structures">Data Structures</option>
+                        <option value="Algorithms">Algorithms</option>
+                    </select>
+                </div>
+                <div class="card-container">
+                    <p>Your history of completed tests will appear here.</p>
+                </div>
+            </div>
+
+            <div id="personalized-tests" class="tab-content">
+                 <div class="filter-bar">
+                    <select>
+                        <option value="all">All Workouts</option>
+                        <option value="speed">Speed Workouts</option>
+                        <option value="accuracy">Accuracy Workouts</option>
+                    </select>
+                </div>
+                <div class="card-container">
+                    <div class="workout-card">
+                        <h4>Today's Cognitive Workout</h4>
+                        <p>Focus: Fixing your 'Analytical-Multi-Step' weakness in Dynamic Programming.</p>
+                        <button>Start Workout</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="build-foundation" class="tab-content">
+                <div class="filter-bar">
+                     <select>
+                        <option value="all">All Concepts</option>
+                        <option value="recursion">Recursion</option>
+                        <option value="logarithms">Logarithms</option>
+                    </select>
+                </div>
+                <div class="card-container">
+                    <p>Personalized modules to strengthen your foundational concepts will appear here.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-text">
+                <h3>Stop Practicing. Start Improving.</h3>
+                <p>Take the first step towards smarter preparation.</p>
+            </div>
+            <button class="footer-btn">Start a Test Now</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
